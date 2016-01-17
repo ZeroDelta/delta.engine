@@ -12,8 +12,5 @@
 namespace delta{
     
     Entity::~Entity(){} //No need for delete calls here because smart pointers are all the rage now adays!!!
-    
-    
-    
-    
+
 }//delta

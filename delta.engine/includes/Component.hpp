@@ -2,34 +2,36 @@
 //  Component.h
 //  DeltaEngine
 //
-//  Created by ZeroSwordsMaster on 16/1/16.
-//  Copyright (c) 2016 zerodelta. All rights reserved.
-//
+//  Created by ZeroDelta on 16/1/16.
+
 
 #pragma once
 
+#include <cstdint>
 
-#include "Entity.h"
+#include "Entity.hpp"
 
-namespace delta{ namespace components {
-    
+namespace delta{
+
     class Entity;
-    
+
     struct Component{
-        
-        Entity* entity{nullptr};
-        
+
+            std::uint32_t entity;
+            
+            std::uint32_t uid;
+
             //virtual void update(float FT) {}
-        
+
         virtual ~Component() {}
     };
-    
+
     struct Position : Component{
-        
+
         int x{0};
         int y{0};
         int z{0};
     };
 
-    
-}}//delta::components
+
+}//delta::components

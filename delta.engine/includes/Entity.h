@@ -36,7 +36,7 @@ namespace delta{
                 //Wrap the provided pointer in a unique ptr because memory allocation is for #coolkids
             std::unique_ptr<components::Component> uniquePtr{component};
             
-                //Move uniquePtr into components area variadically bc direct construction without needing a temporary value is also for fucking cool kids
+                //Move uniquePtr into components area variadically bc direct construction without needing a temporary value is also for  cool kids
             components[std::type_index(typeid(T))] = std::move(uniquePtr);
             
             return *component;

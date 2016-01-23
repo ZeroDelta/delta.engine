@@ -11,7 +11,6 @@
 #include <string>
 #include <typeindex>
 #include <memory>
-#include <cstdint>
 
 #include "Component.hpp"
 
@@ -27,8 +26,9 @@ namespace delta{
         //void addComponent(Component& component);
 
     private:
-        std::uint32_t uid;
-        std::vector<std::uint32_t> uid;
+
+        unsigned uid;
+        std::vector<unsigned> components;
 
     };
 

@@ -19,25 +19,6 @@
 int main(int argc, const char * argv[]) {
     // This is really messy for testing purposes ignore pls
 
-    delta::Entity entity;
-
-    delta::Position position;
-    position.x = 10;
-    position.y = 10;
-    position.z = 10;
-
-    entity.addComponent<delta::Position>(new delta::Position());
-
-
-
-
-
-    std::cout << "X: " << entity.get<delta::Position>()->x << std::endl;
-
-    entity.get<delta::Position>()->x = 25;
-
-    std::cout << "X: " << entity.get<delta::Position>()->x << std::endl;
-
-    std::cout << "Hello, World!\n";
+    std::cout << "This is useless" << std::endl;
     return 0;
 }

@@ -7,8 +7,6 @@
 
 #pragma once
 
-#include <cstdint>
-
 #include "Entity.hpp"
 
 namespace delta{
@@ -17,9 +15,9 @@ namespace delta{
 
     struct Component{
 
-            std::uint32_t entity;
-            
-            std::uint32_t uid;
+            unsigned entity;
+
+            unsigned uid;
 
             //virtual void update(float FT) {}
 
@@ -32,6 +30,5 @@ namespace delta{
         int y{0};
         int z{0};
     };
-
 
 }//delta::components

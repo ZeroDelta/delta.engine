@@ -4,6 +4,7 @@
 #include "Component.hpp"
 
 #include <vector>
+#include <memory>
 
 namespace delta {
 
@@ -15,8 +16,7 @@ namespace delta {
         //registerSystem
 
     private:
-        std::vector<Entity> entities;
-        std::vector<Component> components;
+        
         //std::vector<System> subsystems;
 
     }

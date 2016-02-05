@@ -8,7 +8,7 @@
 #include <vector>
 
 #include "Entity.hpp"
-#include "FreeList.hpp"
+#include "util/FreeList.hpp"
 
 namespace delta {
     class EntityManager {

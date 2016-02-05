@@ -10,6 +10,8 @@
 
 namespace delta{
 
-    Entity::~Entity(){} //this will eventually delete all components it "owns"
+    Entity::Entity(){
+        
+    }
 
 }//delta

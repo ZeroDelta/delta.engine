@@ -7,11 +7,11 @@
 #include <memory>
 #include <vector>
 
-#include "FreeList.hpp"
+#include "util/FreeList.hpp"
 #include "Component.hpp"
 
 namespace delta {
-    
+
     class ComponentManager {
     private:
 

@@ -10,14 +10,20 @@
 
 #include <iostream>
 
+//#include "Entity.hpp"
+//#include "Component.hpp"
+
+#include "util/FreeList.hpp"
 #include "Entity.hpp"
-#include "Component.hpp"
 
-
-
+typedef unsigned Handle;
 
 int main(int argc, const char * argv[]) {
     // This is really messy for testing purposes ignore pls
+
+    delta::FreeList<delta::Entity> integers = delta::FreeList<delta::Entity>();
+    Handle temp = integers.add();
+
 
     std::cout << "This is useless" << std::endl;
     return 0;

@@ -1,6 +1,6 @@
 //
 //  Component.h
-//  DeltaEngine
+//  DeltaEngine (∆ng)
 //
 //  Created by ZeroDelta on 16/1/16.
 
@@ -8,9 +8,10 @@
 #pragma once
 
 #include "Entity.hpp"
-#include "Handle.hpp"
 
 namespace delta{
+
+    typedef unsigned Handle;
 
     class Entity;
 

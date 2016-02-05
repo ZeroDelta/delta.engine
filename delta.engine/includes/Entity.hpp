@@ -12,24 +12,19 @@
 #include <typeindex>
 #include <memory>
 
-#include "Handle.hpp"
 #include "Component.hpp"
 
 
 
 namespace delta{
 
-    class Entity{
+    typedef unsigned Handle;
 
-    public:
-        ~Entity();
+    struct Entity{
 
-        //void addComponent(Component& component);
+        Entity();
 
-    private:
-
-        unsigned uid;
-        std::vector<Handle> components;
+        Handle handle;
 
     };
 

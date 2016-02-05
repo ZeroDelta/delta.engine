@@ -8,6 +8,7 @@
 #pragma once
 
 #include "Entity.hpp"
+#include "Handle.hpp"
 
 namespace delta{
 
@@ -15,9 +16,9 @@ namespace delta{
 
     struct Component{
 
-            unsigned entity;
+            Handle entity;
 
-            unsigned uid;
+            Handle uid;
 
             //virtual void update(float FT) {}
 

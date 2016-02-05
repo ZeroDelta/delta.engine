@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Handle.hpp"
+
 #define INDEX_MASK 0xffff
 #define ID_ADD 0x10000
 

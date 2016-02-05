@@ -8,12 +8,13 @@
 #include <vector>
 
 #include "Entity.hpp"
+#include "FreeList.hpp"
 
 namespace delta {
     class EntityManager {
     private:
 
-        std::vector<unique_ptr<Entity>> entities;
+        FreeList<Entity> entities;
 
     public:
 

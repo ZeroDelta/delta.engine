@@ -12,6 +12,7 @@
 #include <typeindex>
 #include <memory>
 
+#include "Handle.hpp"
 #include "Component.hpp"
 
 
@@ -28,7 +29,7 @@ namespace delta{
     private:
 
         unsigned uid;
-        std::vector<unsigned> components;
+        std::vector<Handle> components;
 
     };
 

@@ -7,17 +7,19 @@
 #include <memory>
 #include <vector>
 
+#include "FreeList.hpp"
 #include "Component.hpp"
 
 namespace delta {
+    
     class ComponentManager {
     private:
 
-        std::vector<unique_ptr<Component>> components;
+        FreeList<Component> components;
 
     public:
 
-        
+
 
     }
 }//delta::

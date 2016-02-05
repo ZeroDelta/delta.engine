@@ -23,8 +23,10 @@ int main(int argc, const char * argv[]) {
 
     delta::FreeList<delta::Entity> integers = delta::FreeList<delta::Entity>();
     Handle temp = integers.add();
+    Handle next = integers.add();
 
 
-    std::cout << "This is useless" << std::endl;
+    std::cout << integers.get(temp).handle << std::endl;
+    std::cout << integers.get(next).handle << std::endl;
     return 0;
 }

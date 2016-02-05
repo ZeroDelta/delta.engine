@@ -73,7 +73,7 @@ namespace delta{
 
             in.index = MAX_SIZE;
 
-            indices[enqueue].next = handle;
+            indices[enqueue].next = handle & INDEX_MASK;
             enqueue = handle & INDEX_MASK;
 
         }

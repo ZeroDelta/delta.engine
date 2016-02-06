@@ -25,6 +25,9 @@ namespace delta{
         Entity();
 
         Handle handle;
+        std::vector<Handle> components;
+
+        int position;
 
     };
 

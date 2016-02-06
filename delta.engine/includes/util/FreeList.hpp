@@ -39,6 +39,11 @@ namespace delta{
 
         }
 
+        bool has(Handle handle) {
+            Index &in = indices[handle & INDEX_MASK];
+            return in.handle == handle && in.index != MAX_SIZE;
+        }
+
         T& get(Handle handle){
 
             return entries[indices[handle & INDEX_MASK].index];
@@ -75,6 +80,9 @@ namespace delta{
 
             indices[enqueue].next = handle & INDEX_MASK;
             enqueue = handle & INDEX_MASK;
+
+            if(dequeue == MAX_SIZE)
+                dequeue = enqueue;
 
         }
 
